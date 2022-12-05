@@ -1,0 +1,10 @@
+--- drivers/gpu/drm/Makefile	2016-03-27 15:41:26.000000000 -0500
++++ ../../../Makefile	2021-06-18 10:27:24.400147579 -0500
+@@ -49,6 +49,7 @@
+ obj-$(CONFIG_DRM_SAVAGE)+= savage/
+ obj-$(CONFIG_DRM_VMWGFX)+= vmwgfx/
+ obj-$(CONFIG_DRM_VIA)	+=via/
++obj-$(CONFIG_DRM_OPENCHROME) +=openchrome/
+ obj-$(CONFIG_DRM_VGEM)	+= vgem/
+ obj-$(CONFIG_DRM_NOUVEAU) +=nouveau/
+ obj-$(CONFIG_DRM_EXYNOS) +=exynos/
