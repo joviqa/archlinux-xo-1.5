@@ -1,5 +1,6 @@
 
 HOW TO INSTALL ARCHLINUX ON A OLPC XO 1.5 LAPTOP
+================================================
 
 some first considerations before starting:
 
@@ -7,7 +8,9 @@ some first considerations before starting:
     - it needs the last version of the Firmware for the XO 1.5.
     - it needs to unlock the XO with the devs key.
 
+==============================
 	KERNEL COMPILE
+==============================
 
     I compiled the kernel from an ArchLinux host, so I've used the PKGBUILD file from the Arch repo and added some files including the kernel config file.
     If you have an 32bit host the compile should be as usual, I haven't.
@@ -18,8 +21,9 @@ some first considerations before starting:
     
     At this step the config menu will appear and you can make modifications or just Exit and the build will continue.
          
-
+=============================
 	INSTALL LINUX
+=============================
 
     The installation is common as any Linux Install. The olpc boots from an USB or SD media.
     I use a 4GB SD card and install inside a Virtual machine. Any method is of installing Linux is valid.
@@ -31,7 +35,8 @@ some first considerations before starting:
     
     This is not estrictly necesary (creating 2 separated partitions), if you choose to do that then the contents on the boot partition are different. I'll explain latter how.
 
-    *FOR VIRTUALBOX
+    *///////FOR VIRTUALBOX/////////
+    
     Mount the SD directly as an virtualDisk (this is what I did). To mount the SD  as an VirtualDisk I use:
 
         $ sudo VBoxManage internalcommands createrawvmdk -filename xo.vmdk -rawdisk /dev/mmcblk0
@@ -60,8 +65,9 @@ some first considerations before starting:
 
     only the kernel and headers are needed.
 
-
+===============================
 	XO INSTRUCTIONS
+===============================
 
     First change the root partition label:
 
