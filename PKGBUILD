@@ -15,7 +15,7 @@ provides=('linux')
 license=('GPL2')
 makedepends=('xmlto' 'kmod' 'inetutils' 'bc' 'libelf')
 options=('!strip')
-source=("${_srcname}.tar.gz"
+source=("${_srcname}"::"git+https://github.com/joviqa/olpc-kernel-5.1"
         # openchrome drm   
         "via.tar.gz"
         "openchrome.tar.gz"
@@ -31,7 +31,7 @@ source=("${_srcname}.tar.gz"
         # standard config files for mkinitcpio ramdisk
         'linux.preset')
 
-sha256sums=('3e302d4b23ac9dd7e1c1be0e0ecb3542f163513f0940f54375de8dc070987349'
+sha256sums=('SKIP'
             '099d9e88339676ccbea92942ba8916b1cf15bf4c40a5725fdc8bc9b8d20caa2b'
             '00c7d872a4338ef8c1f6668af893ed53a5428f0190711e85109db808d99fe6fb'
             'ee1b837c6da3ddd55b7eb7f9507a4c0c4f1c98ed7dcce2dea2f4e04656bc2be5'
